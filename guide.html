@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>어디나 카드 사용설명서</title>
+<meta name="description" content="초대·참가 방법과 7포커·하이로우·바둑이 규칙(족보·베팅·선언·교환·땡값)을 한눈에.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Odina Studio · 어디나">
+<meta property="og:title" content="어디나 카드 사용설명서">
+<meta property="og:description" content="초대·참가 방법과 7포커·하이로우·바둑이 규칙(족보·베팅·선언·교환·땡값)을 한눈에.">
+<meta property="og:url" content="https://parktaekan.github.io/card-join/guide.html">
+<meta property="og:image" content="https://parktaekan.github.io/card-join/img/card-icon-512.png">
+<link rel="icon" href="img/odina-mark-180.png">
+
+<style>
+  :root { --felt: #0e4a31; --gold: #ffd24a; --ink: #1d2420; --dim: #5a665e; --line: #d5dcd6; --bg: #f6f7f4; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Noto Sans KR", sans-serif; background: var(--bg); color: var(--ink); line-height: 1.7; }
+  header { background: var(--felt); color: #fff; padding: 22px 18px; }
+  header h1 { margin: 0; font-size: 22px; }
+  header p { margin: 4px 0 0; color: #cfe3d7; font-size: 14px; }
+  nav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap; padding: 8px 12px; z-index: 1; }
+  nav a { display: inline-block; margin-right: 14px; color: var(--felt); text-decoration: none; font-weight: 700; font-size: 14px; }
+  main { max-width: 760px; margin: 0 auto; padding: 8px 18px 60px; }
+  h2 { font-size: 19px; margin-top: 34px; padding-bottom: 6px; border-bottom: 2px solid var(--felt); }
+  h3 { font-size: 16px; margin: 22px 0 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 8px 0; }
+  th, td { border: 1px solid var(--line); padding: 7px 8px; text-align: left; vertical-align: top; }
+  th { background: #e7ece7; }
+  .tip { background: #fff8dc; border-left: 4px solid var(--gold); padding: 8px 12px; margin: 10px 0; font-size: 14px; }
+  .key { display: inline-block; padding: 0 7px; border: 1px solid #b7c2ba; border-radius: 6px; background: #fff; font-size: 13px; }
+  small, .dim { color: var(--dim); }
+  .shots { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+  .shots figure { margin: 0; flex: 1 1 200px; max-width: 260px; }
+  .shots img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.18); }
+  .shots figure.wide { flex-basis: 100%; max-width: 560px; }
+  ol.steps { padding-left: 22px; }
+  ol.steps > li { margin: 6px 0; }
+</style>
+</head>
+<body>
+<header>
+  <img src="img/odina-logo-ko-white.png" alt="어디나 (Odina)" style="height:64px;display:block;margin-bottom:10px">
+  <div style="display:flex;align-items:center;gap:12px"><img src="img/card-icon-512.png" alt="" style="width:56px;height:56px;border-radius:12px"><h1>어디나 카드 사용설명서</h1></div>
+  <p>같은 와이파이에서, 또는 멀리 있는 친구와 인터넷으로 하는 7포커 · 하이로우 · 바둑이</p>
+</header>
+<nav>
+  <a href="#start">시작하기</a><a href="#invite">초대·참가</a><a href="#hotspot">비행기·핫스팟</a><a href="#screen">게임 화면</a><a href="#seven">7포커</a><a href="#hilo">하이로우</a><a href="#badugi">바둑이</a><a href="#bet">베팅</a><a href="#ddaeng">땡값</a><a href="#settings">설정</a><a href="#points">보유 점수·업적</a><a href="#faq">자주 묻는 질문</a>
+</nav>
+<main>
+
+<h2 id="start">1. 시작하기</h2>
+<p>앱을 열면 <b>이름</b> 칸이 있습니다. 처음 켜면 칸이 비어 있으니 애칭이나 별명을 넣어 주세요. 한 번 넣은 이름은 다음에도 그대로 나옵니다.</p>
+<table>
+<tr><th>혼자 하기</th><td>봇과 바로 한 판. 인원(2~5명)을 고르고 <span class="key">입장</span>. 종목과 베팅 규칙은 설정에서 고릅니다.</td></tr>
+<tr><th>방 만들기</th><td>내가 방장이 되어 친구를 부릅니다. 인원·<b>점수 게임 / 시범 게임</b>·방 이름·방 키를 정하고 방을 엽니다.</td></tr>
+<tr><th>참가하기</th><td>친구가 만든 방에 들어갑니다. QR 찍기, 붙여넣기, 참가 코드, 같은 와이파이의 방 목록 중 편한 것으로.</td></tr>
+<tr><th>성적 보기</th><td>1일 · 1주 · 1개월 · 3개월 · 누적 성적과 고른 종목의 이번 달·분기 순위.</td></tr>
+<tr><th>보유 점수</th><td>버튼 아래에 내 보유 점수와 <span class="key">업적 · 기록</span>·<span class="key">점수 충전</span> 버튼이 있습니다 (<a href="#points">보유 점수·업적</a>).</td></tr>
+</table>
+<div class="shots"><figure class="wide"><img src="img/guide/home.jpg" alt="처음 화면" loading="lazy"><figcaption>처음 화면</figcaption></figure></div>
+
+<h2 id="invite">2. 초대·참가</h2>
+<ul>
+<li><b>같은 와이파이·핫스팟</b>: 인터넷 없이도 됩니다 (<a href="#hotspot">비행기에서 핫스팟으로 하기</a>). 방장이 방을 열면 같은 와이파이 친구의 참가하기 화면에 방이 뜹니다. 방 키를 넣고 입장하거나 방장 화면의 QR을 찍으세요.</li>
+<li><b>멀리 있는 친구</b>: 방장 대기실의 <span class="key">카톡 초대</span>로 링크를 보내면, 받은 친구는 링크만 누르면 같은 방에 들어옵니다.</li>
+<li><b>인터넷 방 목록</b>: 방장이 방 만들기에서 <b>인터넷 목록: 보이기</b>(기본)를 두면, 멀리 있는 사람의 참가하기 화면에도 그 방이 <b>[인터넷]</b>으로 뜹니다. <b>방 키를 아는 사람만</b> 들어올 수 있고, 방 키를 5번 틀리면 그 기기는 5분 동안 막힙니다.</li>
+<li><b>사람이 모자라면</b>: 방장이 <span class="key">빈자리 봇으로 채우고 시작</span>을 누르면 봇이 빈자리를 채웁니다. 늦게 온 친구는 봇 자리를 구경하다 그 판이 끝나면 이어받습니다.</li>
+<li>게임 중에 나갔다 돌아오면 내 자리를 다시 이어받습니다. 그 사이 내 자리는 봇이 둡니다.</li>
+</ul>
+
+<h3 id="hotspot">비행기에서 (인터넷 없이) 핫스팟으로 하기</h3>
+<p>비행기·기차·캠핑장처럼 인터넷이 없는 곳에서도 됩니다. <b>방장 폰의 핫스팟이 공유기 역할</b>을 하고, 친구들은 그 핫스팟에 와이파이로 붙습니다.
+게임은 폰끼리만 주고받으므로 <b>모바일 데이터를 쓰지 않습니다</b>. 앱은 미리 설치해 두세요.</p>
+<ol class="steps">
+<li><b>방장</b>: 비행기 탑승 모드를 켜고 <b>모바일 핫스팟</b>을 켭니다. 핫스팟 이름과 비밀번호를 친구들에게 알려 줍니다.</li>
+<li><b>친구들</b>: 비행기 탑승 모드는 켠 채로 <b>Wi-Fi만 켜고</b> 방장 핫스팟에 연결합니다. "인터넷 없음 — 연결을 유지할까요?"가 나오면 <b>유지</b>를 고릅니다.</li>
+<li><b>방장</b>: 앱에서 <span class="key">방 만들기</span> → <span class="key">방 열고 입장</span>. "인터넷 없음 — 같은 와이파이에서만 참가할 수 있습니다"는 핫스팟에서는 정상입니다.</li>
+<li><b>친구들</b>: <span class="key">참가하기</span>에서 방을 누르고 방 키를 넣거나, <span class="key">QR 찍기</span>로 방장 화면의 QR을 찍습니다.</li>
+</ol>
+<div class="shots"><figure><img src="img/guide/hs-phone-host.jpg" alt="방장 폰 — 비행기 모드 + 모바일 핫스팟" loading="lazy"><figcaption>방장 폰 — 비행기 모드 + 모바일 핫스팟</figcaption></figure><figure><img src="img/guide/hs-phone-friend.jpg" alt="친구 폰 — 비행기 모드 + Wi-Fi로 방장 핫스팟 연결" loading="lazy"><figcaption>친구 폰 — Wi-Fi로 방장 핫스팟 연결</figcaption></figure></div>
+<p class="tip">방장 폰은 핫스팟과 방을 같이 돌려 배터리를 많이 씁니다. 방은 방장 폰 안에 있어서 방장이 앱을 완전히 끄면 게임이 끝납니다. 기내에서는 설정에서 음성·효과음을 끄거나 이어폰을 쓰고, 항공사 안내를 따르세요.</p>
+
+<h2 id="screen">3. 게임 화면</h2>
+<ul>
+<li>위쪽에 다른 사람 자리, 아래쪽에 내 자리, 오른쪽(세로 화면은 아래)에 버튼이 있습니다.</li>
+<li>자리 이름 앞의 <b>[선]</b>은 이번 판에 카드를 돌린 사람, <b>[보스]</b>는 공개한 카드가 가장 좋아 먼저 베팅하는 사람입니다.</li>
+<li>가운데에 <b>판돈</b>과 지금 무엇을 하는 중인지 나옵니다. 자리마다 보유 점수와 이번 판에 건 점수가 보입니다.</li>
+<li>내 카드 가운데 남에게 안 보이는 카드는 조금 아래로 내려가 있고 밑에 파란 줄이 있습니다.</li>
+<li>오른쪽 위 <span class="key">≡</span> 메뉴에 <b>족보 보기</b>, 채팅, 나가기가 있습니다.</li>
+</ul>
+<div class="shots"><figure class="wide"><img src="img/guide/bet.jpg" alt="7포커 5구 베팅 — 내 차례" loading="lazy"><figcaption>7포커 5구 베팅 — 내 차례</figcaption></figure></div>
+
+<h2 id="seven">4. 7포커</h2>
+<ol class="steps">
+<li>판을 시작할 때 모두 <b>기본 베팅</b>을 냅니다.</li>
+<li><b>초이스</b>: 4장을 받아 1장을 버리고, 남은 3장 가운데 1장을 골라 공개합니다 (설정에 따라 3장 초이스, 또는 2장 + 1장 공개).</li>
+<li><b>4구 · 5구 · 6구</b>: 한 장씩 공개 카드를 받고 그때마다 베팅합니다. 공개 카드가 가장 좋은 <b>보스</b>부터 베팅합니다.</li>
+<li><b>7구(히든)</b>: 마지막 한 장은 나만 보는 카드로 받고 마지막 베팅을 합니다.</li>
+<li>끝까지 남은 사람끼리 7장 가운데 가장 좋은 5장으로 겨룹니다. 모두 다이하고 한 사람만 남으면 그 사람이 판돈을 가져갑니다.</li>
+</ol>
+<div class="shots"><figure class="wide"><img src="img/guide/choose.jpg" alt="초이스 — 버릴 카드 1장을 고르는 중" loading="lazy"><figcaption>초이스 — 버릴 카드 1장, 그다음 공개할 카드 1장을 누릅니다</figcaption></figure></div>
+<h3>족보 (높은 순)</h3>
+<table>
+<tr><th>로티플</th><td>A·K·Q·J·10 같은 무늬</td></tr>
+<tr><th>백티플</th><td>A·2·3·4·5 같은 무늬</td></tr>
+<tr><th>스티플</th><td>숫자가 이어지는 5장, 같은 무늬</td></tr>
+<tr><th>포카드</th><td>같은 숫자 4장</td></tr>
+<tr><th>풀하우스</th><td>같은 숫자 3장 + 같은 숫자 2장</td></tr>
+<tr><th>플러시</th><td>같은 무늬 5장</td></tr>
+<tr><th>마운틴</th><td>A·K·Q·J·10</td></tr>
+<tr><th>백스트레이트</th><td>A·2·3·4·5</td></tr>
+<tr><th>스트레이트</th><td>숫자가 이어지는 5장</td></tr>
+<tr><th>트리플 · 투페어 · 원페어 · 탑</th><td>같은 숫자 3장 · 2장씩 두 쌍 · 2장 · 가장 높은 카드</td></tr>
+</table>
+<p>같은 족보끼리는 숫자로, 숫자도 같으면 무늬(♠ &gt; ◆ &gt; ♥ &gt; ♣)로 정합니다. 설정에서 <b>A 순환 스트레이트</b>(K·A·2·3·4 같은)를 켤 수 있습니다.</p>
+
+<h2 id="hilo">5. 하이로우</h2>
+<p>7포커와 같이 진행하고, 7구 베팅이 끝나면 남은 사람이 각자 <b>하이 · 로우 · 스윙</b> 가운데 하나를 동시에 고릅니다 (선언). 로우가 안 되는 패는 하이만 고를 수 있습니다. 판돈은 하이에서 이긴 사람과 로우에서 이긴 사람이 반씩 나눕니다.</p>
+<ul>
+<li><b>로우</b>: 숫자가 모두 다른 5장으로, 높은 숫자가 낮을수록 셉니다. A가 가장 낮고 <b>6탑(A·2·3·4·6)</b>이 가장 좋습니다. 5장에 페어·스트레이트·플러시가 있으면 로우가 되지 않습니다.</li>
+<li><b>스윙</b>: 하이와 로우를 둘 다 노립니다. 둘 다 이겨야 판돈을 모두 가져가고, 하나라도 지면 아무것도 못 받습니다.</li>
+<li><b>포카드 이상</b>은 스윙만 고를 수 있고, 모든 로우를 이깁니다.</li>
+<li>하이를 고른 사람만 있거나 로우를 고른 사람만 있으면 그쪽에서 이긴 사람이 판돈을 모두 가져갑니다.</li>
+</ul>
+<div class="shots"><figure class="wide"><img src="img/guide/declare.jpg" alt="하이로우 선언 — 하이 · 로우 · 스윙" loading="lazy"><figcaption>하이로우 선언 — 하이 · 로우 · 스윙</figcaption></figure></div>
+
+<h2 id="badugi">6. 바둑이</h2>
+<ol class="steps">
+<li>모두 기본 베팅을 내고 4장씩 받은 뒤 베팅합니다.</li>
+<li><b>아침 · 점심 · 저녁</b> 세 번, 바꾸고 싶은 카드를 골라 새 카드로 바꿉니다 (안 바꾸면 <span class="key">패스</span>). 바꿀 때마다 그 뒤에 베팅합니다.</li>
+<li><span class="key">추천 고르기</span>를 누르면 바꾸면 좋은 카드를 골라 줍니다.</li>
+<li>저녁 베팅까지 끝나면 남은 사람끼리 겨룹니다.</li>
+</ol>
+<div class="shots"><figure><img src="img/guide/exchange.jpg" alt="바둑이 아침 교환 (세로 화면)" loading="lazy"><figcaption>바둑이 아침 교환 (세로 화면)</figcaption></figure></div>
+<h3>바둑이 족보</h3>
+<ul>
+<li>무늬와 숫자가 모두 다른 카드가 많을수록 좋습니다: <b>메이드(4장) &gt; 베이스(3장) &gt; 투베이스(2장) &gt; 1장</b>.</li>
+<li>장수가 같으면 가장 높은 숫자부터 비교해 <b>낮은 쪽</b>이 이깁니다. A가 가장 낮습니다.</li>
+<li>가장 좋은 패: <b>골프</b>(A·2·3·4) &gt; <b>세컨드</b>(A·2·3·5) &gt; <b>써드</b>(A·2·4·5) &gt; …</li>
+<li>무늬 순서는 없고, 똑같으면 판돈을 나눕니다.</li>
+</ul>
+
+<h2 id="bet">7. 베팅</h2>
+<table>
+<tr><th>삥</th><td>아직 아무도 걸지 않았을 때 기본 베팅만큼 겁니다.</td></tr>
+<tr><th>체크</th><td>아직 아무도 걸지 않았을 때 걸지 않고 넘깁니다.</td></tr>
+<tr><th>콜</th><td>앞사람과 같은 점수를 맞춥니다.</td></tr>
+<tr><th>따당</th><td>앞사람이 건 점수의 두 배로 올립니다.</td></tr>
+<tr><th>쿼터</th><td>콜하고, 판돈의 1/4만큼 더 올립니다.</td></tr>
+<tr><th>하프</th><td>콜하고, 판돈의 1/2만큼 더 올립니다.</td></tr>
+<tr><th>맥스</th><td>콜하고, 맥스 한도(기본 베팅 × 설정한 배수)만큼 더 올립니다.</td></tr>
+<tr><th>다이</th><td>이번 판을 포기합니다. 이미 건 점수는 돌려받지 않습니다.</td></tr>
+</table>
+<ul>
+<li>올리기(따당·쿼터·하프·맥스)는 한 차례에 3번까지입니다. 쿼터·하프로 올리는 점수는 기본 베팅의 1/10 단위로 내립니다.</li>
+<li>보유 점수가 모자라면 가진 만큼만 걸고 <b>올인</b>이 됩니다. 올인한 사람은 자기가 건 만큼까지의 판돈에서만 겨룹니다.</li>
+<li><b>491 룰</b>(설정): 4구에 9 이상 원페어를 보인 보스는 하프나 다이만 할 수 있습니다.</li>
+<li><b>아침벳 · 점심벳</b>(바둑이 설정): 그 차례에는 하프나 다이만 할 수 있습니다.</li>
+</ul>
+
+<h2 id="ddaeng">8. 땡값</h2>
+<p>아주 좋은 패를 보이면 다른 사람에게서 판돈과 따로 <b>땡값</b>을 받습니다. 설정에서 끄고 켭니다.</p>
+<table>
+<tr><th>배수</th><td>7포커·하이로우: 포카드 1 · 스티플 2 · 백티플 3 · 로티플 4<br>바둑이: 5탑 메이드 1 · 써드 2 · 세컨드 3 · 골프 4</td></tr>
+<tr><th>고정 (모두에게)</th><td>기본 베팅 × 10(또는 20) × 배수를 다른 사람 모두(다이한 사람 포함)에게서 받습니다. 패를 보였으면 판에서 져도 받습니다.</td></tr>
+<tr><th>건 점수 × 배수</th><td>내가 건 점수 × 배수를 끝까지 남은 진 사람에게서 받습니다. 판에서 이겨야 받습니다.</td></tr>
+</table>
+<p>내는 사람은 남은 보유 점수까지만, 받는 사람은 판을 시작할 때 보유 점수까지만 오갑니다. 땡값 패끼리는 서로 빼고 차이만 오갑니다.</p>
+<div class="shots"><figure class="wide"><img src="img/guide/result.jpg" alt="하이로우 판 결과 — 하이·로우 승자가 판돈을 나눔" loading="lazy"><figcaption>하이로우 판 결과 — 하이 승자와 로우 승자가 판돈을 나눕니다</figcaption></figure></div>
+
+<h2 id="settings">9. 설정</h2>
+<ul>
+<li><b>종목 · 베팅</b>: 7포커 · 하이로우 · 바둑이, 기본 베팅(100 ~ 5,000), 맥스 한도(×50 · ×100 · ×200 · ×300), 판 수</li>
+<li><b>7포커 · 하이로우</b>: 처음 패 받기(4장 초이스 · 3장 초이스 · 2장 + 1장 공개), A 순환 스트레이트(7포커), 491 룰</li>
+<li><b>바둑이</b>: 하프·다이만 하는 차례(없음 · 아침벳 · 점심벳)</li>
+<li><b>땡값</b>: 켬/끔, 방식(고정 · 건 점수 × 배수), 땡값 1배(기본 베팅 × 10 · × 20)</li>
+<li><b>봇 · 시간</b>: 봇 속도(혼자 하기 · 방 만들기 따로), 턴 시간, 혼자 할 때 [다음 판] 누르기</li>
+<li><b>소리 · 기록</b>: 음성(삥·콜·하프·다이 …, 자리마다 다른 목소리), 효과음, 순위표 참여</li>
+</ul>
+
+<h2 id="points">10. 보유 점수 · 업적 · 기록</h2>
+<h3>보유 점수</h3>
+<ul>
+<li>처음에 <b>50만 점</b>을 드립니다. <b>점수 게임</b>(혼자 하기, 점수 게임으로 연 방)의 판 결과가 보유 점수에 더해지고 빠집니다.</li>
+<li>판에 들어가려면 <b>기본 베팅 × 100</b>(맥스 한도가 ×200·×300이면 그 배수) 이상이 있어야 합니다. 예: 기본 베팅 1,000이면 10만 점.</li>
+<li><b>충전</b>: 처음 화면 <span class="key">점수 충전</span>에 어디나 블로그 글 목록이 나옵니다. 글을 <b>하나 열 때마다 10만 점</b>을 드립니다 (인터넷이 될 때, 같은 글은 하루 한 번). 보유 점수가 <b>200만 점</b>이 될 때까지 쌓을 수 있습니다.</li>
+<li>게임 안의 점수는 돈이 아니며 사고팔 수 없습니다. 보유 점수와 기록은 이 기기에 <b>암호화해</b> 저장되어 고칠 수 없고, 지금은 폰과 태블릿의 점수가 따로입니다.</li>
+</ul>
+<h3>점수 게임 / 시범 게임</h3>
+<ul>
+<li>방장이 <b>방 만들기</b>에서 고릅니다 (기본 점수 게임).</li>
+<li><b>점수 게임</b>: 판 결과가 각자의 보유 점수에 더해지고 업적·내기록·신기록에 들어갑니다.</li>
+<li><b>시범 게임</b>: 점수를 계산해 보여 주지만 보유 점수·업적·기록에는 넣지 않습니다. 점수가 없어도 칠 수 있습니다.</li>
+</ul>
+<h3>업적 · 기록</h3>
+<p>처음 화면 <span class="key">업적 · 기록</span>에 네 탭이 있습니다. 점수 게임만 셉니다.</p>
+<table>
+<tr><th>업적</th><td>항목마다 <b>최근 1년 횟수 · 누적 횟수</b>와 처음·마지막으로 한 날.<br>
+<b>족보</b>: 포카드 · 스티플 · 로티플 (7포커·하이로우에서 그 패로 이긴 판)<br>
+<b>하이로우</b>: 스윙 성공 · 6탑 로우<br>
+<b>바둑이</b>: 골프 · 세컨드·써드<br>
+<b>특별한 승리</b>: 올인 승리 · 땡값 · 대박(한 판에 기본 베팅의 100배 이상)</td></tr>
+<tr><th>내기록</th><td>레벨·등급, 통산 전적, <b>종목별 전적</b>, 최고 한 판, 최고 족보, 최다 연승, 최고 보유 점수 (최근 1년과 역대). 판이 끝날 때 기록을 넘으면 결과 창에 "▲ 내기록"이 뜹니다 (처음 10판은 알리지 않음).</td></tr>
+<tr><th>신기록</th><td>모든 사람의 순위 (혼자 하기 기록만, <b>종목별</b>): 이달의 최고 한 판 · 이달의 최다 연승 · 명예의 전당 · 업적별 이달 횟수 · 이번 달·분기 누적 점수. 이달 순위는 매월 1일(UTC)에 새로 시작합니다. 설정의 "순위표 참여"를 끄면 올리지 않습니다.</td></tr>
+<tr><th>실력 그래프</th><td>최근 14일 또는 월별로 판당 점수, 승률, 다이 비율.</td></tr>
+</table>
+<div class="shots"><figure><img src="img/guide/records.jpg" alt="업적 — 항목마다 최근 1년·누적 횟수" loading="lazy"><figcaption>업적 — 최근 1년 · 누적 횟수</figcaption></figure><figure><img src="img/guide/mybests.jpg" alt="내기록 — 종목별 전적, 최고 족보" loading="lazy"><figcaption>내기록 — 종목별 전적, 최고 족보</figcaption></figure></div>
+<h3>레벨 · 등급</h3>
+<ul>
+<li><b>레벨</b>: 친 판 수로 오릅니다 (5판 Lv.2, 80판 Lv.5, 500판 Lv.11, 2,000판 Lv.21 …).</li>
+<li><b>등급</b>: 입문 · 초급 · 중급 · 상급 · 고수 · 명인. 최근 1년 성적(60%)과 최근 30일 성적(40%)으로 정합니다. 판 결과를 기본 베팅 단위로 바꿔 보고, 인원에 비해 얼마나 자주 이겼는지도 함께 봅니다. 최근 1년에 100판을 치기 전에는 "등급 측정 중"으로 나옵니다.</li>
+</ul>
+
+<h2 id="faq">11. 자주 묻는 질문</h2>
+<h3>같은 와이파이인데 방 목록에 방이 안 보여요</h3>
+<p>방장과 <b>같은 공유기</b>인지 확인하세요. 와이파이 이름이 두 개(통신사 모뎀, 공유기)면 다른 네트워크일 수 있습니다. 그래도 안 보이면 참가 코드로 들어오세요.</p>
+<h3>카톡 링크를 눌렀는데 앱이 안 열려요</h3>
+<p>앱을 먼저 설치하세요. 그래도 안 되면 링크 페이지의 참가 코드를 복사해 [참가하기] → [붙여넣기]로 들어오세요.</p>
+<h3>방장 폰이 꺼졌어요</h3>
+<p>방은 방장 폰 안에 있어서 방장 앱이 꺼지면 게임이 끝납니다. 다른 사람 화면에는 지금까지의 성적표가 나오고, 이 기록도 성적 보기에 남습니다.</p>
+<h3>보유 점수가 모자라 들어갈 수 없어요</h3>
+<p>처음 화면 <span class="key">점수 충전</span>에서 블로그 글을 하나 열 때마다 10만 점이 들어옵니다 (같은 글은 하루 한 번). 기본 베팅을 낮춰 입장 조건을 줄이거나, 시범 게임으로 칠 수도 있습니다.</p>
+<h3>내 차례 시간이 지나면요?</h3>
+<p>턴 시간을 정해 두었으면 그 시간이 지난 뒤 10초를 더 드리고, 마지막 10초는 째깍 소리가 납니다. 그래도 안 고르면 방이 대신 고릅니다: 베팅은 체크할 수 있으면 체크, 아니면 다이, 교환은 메이드에 쓰이지 않는 카드를 바꿉니다.</p>
+
+<h2>문의</h2>
+<p><img src="img/odina-logo-light.png" alt="Odina" style="height:40px;vertical-align:middle"> <img src="img/odina-logo-ko-light.png" alt="어디나" style="height:40px;vertical-align:middle"></p>
+<p>만든 곳 <b>Odina Studio</b> (anywhere · 어디나) · taekan66@gmail.com · <a href="privacy.html">개인정보처리방침</a></p>
+</main>
+</body>
+</html>
